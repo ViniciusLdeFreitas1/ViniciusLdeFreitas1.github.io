@@ -156,7 +156,7 @@ footer {
     }
 }
 
-img {
+.imagemzona {
     width: 300px;
     height: 300px;
     justify-content: flex-start;
