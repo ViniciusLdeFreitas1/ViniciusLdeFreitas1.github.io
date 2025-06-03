@@ -1,7 +1,6 @@
 carregarDados().then(dados => {
     const total = dados.length;
-    const sobreviventes = dados.filter(p => p.Survived == 1); 
-
+    const sobreviventes = dados.filter(p => p.Survived === "1");
     const taxa = (sobreviventes.length / total * 100).toFixed(1);
 
     document.getElementById("total").textContent = total;
@@ -32,9 +31,7 @@ carregarDados().then(dados => {
     });
 
     const ul = document.getElementById("faixas");
-    let html = '';
     for (const faixa in faixas) {
-        html += `<li>${faixa}: ${faixas[faixa]}</li>`;
+        ul.innerHTML += `<li>${faixa}: ${faixas[faixa]}</li>`;
     }
-    ul.innerHTML = html; 
 });
