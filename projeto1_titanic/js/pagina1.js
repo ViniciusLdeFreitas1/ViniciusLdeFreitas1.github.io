@@ -1,6 +1,6 @@
 carregarDados().then(dados => {
     const total = dados.length;
-    const sobreviventes = dados.filter(p => p.Survived == 1); // Corrigido
+    const sobreviventes = dados.filter(p => p.Survived == 1); 
 
     const taxa = (sobreviventes.length / total * 100).toFixed(1);
 
@@ -36,5 +36,5 @@ carregarDados().then(dados => {
     for (const faixa in faixas) {
         html += `<li>${faixa}: ${faixas[faixa]}</li>`;
     }
-    ul.innerHTML = html; // Corrigido
+    ul.innerHTML = html; 
 });
