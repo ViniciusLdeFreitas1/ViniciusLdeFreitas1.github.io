@@ -156,6 +156,15 @@ footer {
     }
 }
 
+.cabecalho-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
 .foto-perfil {
     width: 128px;
     height: 128px;
